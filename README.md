@@ -10,7 +10,7 @@
 
 # Sobre o projeto
 
-** TEXTO ** é um projeto inspirado no Whatsapp.
+** kenzie zap ** é um projeto inspirado no Whatsapp da empresa Meta.
 </br>
 </br>
 ""
