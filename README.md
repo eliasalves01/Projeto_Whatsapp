@@ -21,3 +21,5 @@
 
 - [Html](https://www.w3schools.com/html/)
 - [Css](https://www.w3schools.com/css/)
+
+<p align="center"> Desenvolvido por <a href="https://www.linkedin.com/in/wellingtonrodriguesbr/">Wellington Rodrigues</a> ✌🏼</p>
