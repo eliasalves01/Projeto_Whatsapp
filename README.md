@@ -4,6 +4,10 @@
 
 </br>
 
+<h3 align="center">Você pode acessar o projeto <a href="https://eliasalves01.github.io/Projeto_Whatsapp/" target="_blank">clicando aqui</a></h3>
+
+
+
 # Sobre o projeto
 
 ** TEXTO ** é um projeto inspirado no Whatsapp.
