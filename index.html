@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Zap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css " href="styles.css">
+    <link rel="shortcut icon" type="imagex/png" href="./img/icon.ico">
+    <script src="https://kit.fontawesome.com/0d5c3a25f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <!--BARRA LATERAL (CHAT)-->
+            <div class="toolbar-container">
+                <img class="foto-user animate__animated animate__backInLeft" src="img/kenzie.jpg">
+                <div class="auxicons-toolbar-container">
+                    <i class="fas fa-circle-notch"></i>
+                    <i class="fas fa-comment-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="notificacao-container">
+                <i class="far fa-bell-slash animate__animated animate__tada"></i>
+                <p class="recebimento-notificacao">Receba a notificação de novas Mensagens</p>
+                <p class="notificao-ativa">
+                    Ativar notificações na área de trabalho
+                    <i class="fas fa-angle-roght"></i>
+                </p>
+            </div>
+            <div class="buscar-container">
+                <i id="contato-seach" class="fas fa-search"></i>
+                <input type="text" name="search" id="search" placeholder="Procura ou Começar uma nova conversa">
+            </div>
+            <div class="contato-container">
+                <div class="contato-box">
+                    <img class="foto-user animate__animated animate__backInLeft" src="img/avatar5.png">
+                    <div class="user-info">
+                        <p class="user-name  animate__animated animate__fadeInUp">Maria Eduarda</p>
+                        <p class="user-name animate__animated animate__fadeInUp">
+                            <i class="fas fa-check-double"></i>
+                            Olá bom dia como vai?
+                        </p>
+                    </div>
+                    <div class="mensagem-info">
+                        <p class="mensagem-time">22:40</p>
+                        <p class="mensagem-chegando animate__heartBeat">1</p>
+                    </div>
+                </div>
+                <div class="contato-box">
+                    <img class="foto-user animate__animated animate__backInLeft" src="img/avatar2.png">
+                    <div class="user-info">
+                        <p class="user-name  animate__animated animate__fadeInUp">Lucas</p>
+                        <p class="user-name animate__animated animate__fadeInUp">Está na Aula Kenzie?</p>
+                    </div>
+                    <div class="mensagem-info">
+                        <p class="mensagem-time">22:30</p>
+                        <p class="mensagem-chegando animate__heartBeat ">4</p>
+                    </div>
+                </div>
+                <div  class="contato-box">
+                    <img class="foto-user animate__animated animate__backInLeft" src="img/imagem4.png">
+                    <div class="user-info">
+                        <p class="user-name animate__animated animate__fadeInUp">Priscila Aguiar</p>
+                        <p class="user-name animate__animated animate__fadeInUp">Estou fazendo meu projeto, olha ai...</p>
+                    </div>
+                    <div class="mensagem-info">
+                        <p class="mensagem-time">22:0</p>
+                        <p class="mensagem-chegando animate__animated animate__heartBeat">2</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="chat-container">
+            <!--SECÇÃO PRINCIPAL-->
+            <nav class="chat-navbar">
+                <div class="contato-info-container">
+                    <img class="foto-user animate__animated animate__headShake" src="img/avatar5.png">
+                    <p class="user-name animate__animated animate__headShake">Maria Eduarda</p>
+                </div>
+                <ul class="chatferramentas-container">
+                    <li><i class="fas fa-search"></i></li>
+                    <li><i class="fas fa-paperclip"></i></li>
+                    <li><i class="fas fa-ellipsis-v"></i></li>
+                </ul>
+            </nav>
+            <div class="mensagens-container">
+                <div class="bg-image"></div>
+                <div class="chat-mensagens">
+                    <p class="visitante-mensagens animate__animated animate__fadeInLeft">Olá bom dia como vai? <i class="fas fa-check-double"></i></p> 
+                    <p class="user-mensagens animate__animated animate__fadeInRight">Oi bom dia, vou bem e você? <i class="fas fa-check-double"></i></p>
+                </div>
+            </div>
+            <div class="enviarmensagem-container">
+                <i class="fas fa-grin"></i>
+                <input id="chatmensagem" name="mensagem" class="useripunt" "" type="text"
+                    placeholder="digite uma mensagem">
+                <i class="fas fa-microphone"></i>
+            </div>
+            <span class="loader"><span class="loader-inner"></span></span>
+        </main>
+    </div>
+</body>
+
+</html>

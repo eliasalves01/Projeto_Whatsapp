@@ -1,0 +1,457 @@
+        /* GENERAL */
+/**************************/
+
+html, body, ul{
+   font-family: 'Open Sans', sans-serif ;
+   margin: 0;
+   padding: 0;
+  }
+
+  
+
+ul {  
+  list-style: none;  /* ULTILIZADO PARA RETIRA O BULLET (BOLINHA ) DA LISTA N ORDENADA */
+}
+
+
+
+.container{
+   height: 100vh;
+   position: relative;
+}
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0.1;
+    }
+
+    25% {
+        display: block;
+        opacity: 0.2;
+    }
+
+    75% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+/* BARRA LATERAL (SIDE BAR)*/
+
+.sidebar{
+    width: 410px;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+/* barra de ferramentas (tool bar) */
+
+.toolbar-container {
+    width: 100%;
+    height: 60px;
+    background-color: #eee;
+
+}
+
+.foto-user{
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  background-color: #ccc;
+ transition: 280ms 100ms ease-in;
+}
+
+.contato-box .foto-user:hover{
+  width: 60px;
+}
+
+.auxicons-toolbar-container{
+  float: right;
+  height: 60px;
+  line-height: 60px;
+ padding-right: 20px;  
+
+}
+
+.auxicons-toolbar-container i {
+    color: #80868A;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* NOTIFICAÇÃO */
+
+.notificacao-container{
+    width: 100%;
+    height: 90px;
+    padding-top: 23px;
+    padding-left: 80px;
+    background-color: #9de1fe;
+    color: rgb(129, 129, 129);
+    position: relative;
+    box-sizing: border-box;
+  
+}                            
+
+.far.fa-bell-slash {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #9de1fe;
+    background-color:  #F5FCFF;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.notificacao-container p {
+    margin: 0;
+}
+
+.notificacao-container .recebimento-notificacao {
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.notificao-ativa {
+      font-size: 13px;
+  }
+
+  /* BARRA DE PESQUISA */
+
+  .buscar-container {
+      height: 50px;
+      width: 100%;
+      padding-left: 7.5px;
+      padding-top: 7.5px;
+      background-color: #f8f8f8;
+      position: relative;
+      color: #bdc1c3;
+      box-sizing: border-box;
+  }
+
+  #contato-seach {
+      position: absolute;
+      left: 30px ;
+      top: 18px;
+      font-size: 14px;
+  }
+  
+  #search {
+      border: none;
+      height: 35px;
+      width: 385px;
+      padding-left: 60px;
+      border-radius: 17.5;
+      background-color: #fff;
+      box-sizing: border-box;
+  }
+
+  #search::placeholder{
+      color: #BDC1C3;
+
+  }
+
+  /* ABA DE CONTATOS*/
+
+  .contato-container {
+    height: auto;
+    background-color: #fff;
+
+
+  }
+
+  .contato-box{
+      cursor: pointer;
+      height: 72px;
+      background-color: #fff;
+      border-top: 1px solid #F2F2F2;
+      position: relative;
+      box-sizing: border-box;
+      transition: 120ms 50ms ease-in-out;
+    }
+
+  .contato-box:last-child{
+    border-bottom: 1px solid #f2f2f2;
+
+  }
+  .contato-box:hover{
+      background-color: #f0f3f3;
+      height: 80px;
+  }
+ 
+  .active-chat {
+      background-color: #E9EBEB;
+  }
+
+  .active-chat.contato-box:hover{
+    background-color: #E9EBEB;
+  }
+
+  .contato-box .foto-user{
+      width: 50px;
+  }
+
+  .user-info{
+      margin-left: 80px;
+      padding-top: 10px;
+      display: inline-block;
+  }
+
+  .user-info p, .mensagem-info p{
+      margin: 0;
+  }
+
+  .user-name{
+      font: 16px;
+      color: #000;
+      margin-bottom:12px ;
+    }
+
+    .mensagem-info{
+     font-size: 14px;
+     color: #454545;
+    }
+
+    .fa-check-double {
+        margin-right: 5px;
+        color: #4fc3f7;
+    }
+
+    .mensagem-info{
+        position: absolute;
+        top: 12px;
+        right: 20px;
+        display: inline-block;
+    }
+
+    .mensagem-info .mensagem-time{
+        font-size: 12px;
+        margin-bottom: 5px;
+        color: #ccc;
+    }
+
+    .mensagem-chegando {
+        background-color: #09d261 ;
+        color: #fff;
+        width: 19px;
+        height: 19px;
+        line-height: 19px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 50%;
+        text-align: center;
+        float: right;
+    }
+
+    /* Chat */
+
+ .chat-container {
+    position: absolute;
+    top: 0;
+    left: 410px;
+    width: calc(100% - 410px);
+    height: 100%;
+    background-color: #ccc;
+    }
+
+    /* Chat Navbar */
+
+    .chat-navbar{
+        height:60px ;
+        background-color: #eee;
+        border-left: 1px solid #ddd;
+        padding-left: 75px;
+    }
+    
+    .chat-navbar p{
+        margin: 0;
+    }
+
+    .contato-info-container {
+    display: inline-block;
+    }
+    
+    .contato-info-container .user-name {
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+    }
+    
+    .chatferramentas-container {
+    float: right;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 20px;
+    }
+     
+    .chatferramentas-container li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 18px;
+    color: #80868a;
+    cursor: pointer;
+    }
+
+    /* MENSAGENS*/
+
+    .mensagens-container{
+     background-color: #e1dad2;
+     height: calc(100% - 120px);
+     position: relative;
+    }
+
+    .mensagens-container p{
+        margin: 0;
+    }
+    
+    .bg-image {
+        background-image: url(img/whats.png);
+        background-repeat: repeat;
+        opacity: 25%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .chat-mensagens{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        padding: 30px 80px;
+        box-sizing:border-box;
+    }
+
+    .chat-mensagens p {
+        display: block;
+        color: #262626;
+        font-size: 14px;
+        padding: 7px;
+        border-radius: 7px;
+        position: relative;
+    }
+
+    .visitante-mensagens {
+     background-color: #fff;
+     width: 175px;
+    }
+
+    .fa-check-double {
+        opacity: 0;
+        transition: opacity .5s;
+    }
+    
+    .fa-check-double:hover {
+        opacity: 1;
+    }
+         
+    
+
+    .visitante-mensagens:before{
+       content: "";
+       width: 0;
+       height: 0;
+       border-bottom: 17px solid transparent;
+       border-right: 17px solid #fff;
+       position: absolute;
+       top: 0;
+       left: -10px;
+    }
+
+    .user-mensagens {
+     background-color: #dcf8c6;
+     float: right;
+     width: 210px;
+    }
+    
+    .user-mensagens::before{
+       content: "";
+       width: 0;
+       height: 0;
+       border-bottom: 17px solid transparent;
+       border-left: 17px solid #dcf8c6;
+       position: absolute;
+       top: 0;
+       right: -10px;
+    }
+
+
+    /* ENVIAR MENSAGENS */
+    .enviarmensagem-container {
+   background-color: #efefef;
+   border-left: 1px solid #DDD;
+   height: 60px;
+   padding-left: 20px;
+   padding-right: 20px;
+   position: relative;
+
+    }
+
+    #chatmensagem {
+        position: relative;
+        top: -5px;
+        left: 55px;
+        background-color: #fff;
+        border: none;
+        height: 35px;
+        border-radius: 20px;
+        padding-left: 20px;
+        font-size: 16px;
+        width: 800px;
+    }
+
+    .enviarmensagem-container i{
+    font-size: 24px;
+    color: #80868a;
+    height: pointer;
+    height: 60px;
+    line-height: 60px;
+    }
+
+    .fa-microphone {
+        position: relative;
+        cursor: pointer;
+        float: right;
+    }
+
+    /* ANIMAÇÕES */
+    
+
+    .animate__animated.animate__fadeInUp {
+        --animate-duration: 3s;
+      }
+      .animate__animated.animate__tada {
+        --animate-duration: 5s;
+      }
+      .animate__animated.animate__fadeInRight{ 
+        --animate-duration: 5.5s;
+        }
+        .animate__animated.animate__fadeInLeft{ 
+          --animate-duration: 4.0s;
+          }
+          .animate__animated.animate__headShake{
+            --animate-duration: 1.2s;
+        
+          }
+          .animate__animated.animate__backInLeft{
+            --animate-duration: 1.4s;
+          }
+
+          .animate__animated.animate__headShake{
+            --animate-duration: 1.4s;
+
+          } 
+          
