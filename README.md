@@ -6,7 +6,7 @@
 
 # Sobre o projeto
 
-**Spider-man Miles Morales** é um projeto inspirado no jogo da Marvel disponível para consoles.
+** TEXTO ** é um projeto inspirado no Whatsapp.
 </br>
 </br>
 ""
