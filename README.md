@@ -10,7 +10,7 @@
 
 # Sobre o projeto
 
-**kenzie zap** É um projeto inspirado no Whatsapp da empresa Meta.
+**KENZIE ZAP** É um projeto inspirado no Whatsapp da empresa Meta.
 </br>
 </br>
 ""
