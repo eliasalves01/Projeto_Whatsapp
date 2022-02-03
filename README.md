@@ -22,4 +22,4 @@
 - [Html](https://www.w3schools.com/html/)
 - [Css](https://www.w3schools.com/css/)
 
-<p align="center"> Desenvolvido por <a href="/">Elias Alves</a> 😎🏼</p>
+<p align="center"> Desenvolvido por <a href="https://www.linkedin.com/in/elias-alves-88455a16b/">Elias Alves</a> 😎🏼</p>
